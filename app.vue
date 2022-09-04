@@ -7,8 +7,12 @@
         >
           <!-- Left SideBar -->
           <div class="border-2 md:block xs:col-span-1 xl:col-span-2">
-            <button @click="toggleDarkMode" class="btn">darkMode</button>
-            twitter clonett
+            <button
+              @click="toggleDarkMode"
+              class="border-2 rounded-lg text-center px-4"
+            >
+              darkMode
+            </button>
             <div class="sticky top-0">
               <SidebarLeft />
             </div>
@@ -20,7 +24,7 @@
 </template>
 
 <script setup>
-const darkMode = ref(true);
+const darkMode = ref(false);
 const toggleDarkMode = function () {
   console.log("click", darkMode.value);
   darkMode.value = !darkMode.value;

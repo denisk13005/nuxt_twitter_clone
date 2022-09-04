@@ -8,10 +8,19 @@
         <div class="w-8 h-8"><LogoTwitter /></div>
       </nuxt-link>
     </div>
-    <v-icon name="flag"></v-icon>
+    <SidebarLeftTab active>
+      <template v-slot:icon>
+        <span class="material-icons"> home </span>
+      </template>
+      <template v-slot:name> Home </template>
+    </SidebarLeftTab>
   </div>
 </template>
 <script setup>
 const { defaultTransition } = useTailwindConfig();
 </script>
-<style lang=""></style>
+<style>
+.material-icons {
+  font-size: 32px;
+}
+</style>
