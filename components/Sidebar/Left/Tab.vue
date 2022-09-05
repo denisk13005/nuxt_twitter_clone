@@ -7,7 +7,7 @@
     <div class="flex items-center">
       <slot name="icon"></slot>
     </div>
-    <div class="ml-3 text-xl invisible xs:visible" :class="textClasses">
+    <div class="ml-3 text-xl invisible md:visible" :class="textClasses">
       <slot name="name"></slot>
     </div>
   </nuxt-link>

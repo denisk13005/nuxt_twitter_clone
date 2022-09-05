@@ -6,7 +6,7 @@
           class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5"
         >
           <!-- Left SideBar -->
-          <div class="border-2 md:block xs:col-span-1 xl:col-span-2">
+          <div class="hidden xs:block xs:col-span-1 xl:col-span-2">
             <button
               @click="toggleDarkMode"
               class="border-2 rounded-lg text-center px-4"
