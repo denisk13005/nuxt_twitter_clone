@@ -16,19 +16,27 @@
     </SidebarLeftTab>
     <SidebarLeftTab>
       <template v-slot:icon>
-        <img class="w-8 h-8" src="~/assets/tag_black_24dp.svg" alt="" />
+        <div class="containerTag">
+          <img class="tag" src="~/assets/tag_black_24dp.svg" alt="" />
+        </div>
       </template>
       <template v-slot:name> Explore </template>
     </SidebarLeftTab>
     <SidebarLeftTab>
       <template v-slot:icon>
-        <span class="material-icons"> messages </span>
+        <span class="material-icons"> notifications_none </span>
+      </template>
+      <template v-slot:name> Notifications </template>
+    </SidebarLeftTab>
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <span class="material-icons w-6"> messages </span>
       </template>
       <template v-slot:name> Messages </template>
     </SidebarLeftTab>
     <SidebarLeftTab>
       <template v-slot:icon>
-        <span class="material-icons"> bookmarks </span>
+        <span class="material-icons w-6"> bookmarks </span>
       </template>
       <template v-slot:name> Bookmarks </template>
     </SidebarLeftTab>
@@ -57,6 +65,20 @@ const { defaultTransition } = useTailwindConfig();
 </script>
 <style>
 .material-icons {
-  font-size: 32px;
+  font-size: 18px;
+}
+.containerTag {
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (min-width: 610px) {
+  .material-icons {
+    font-size: 24px;
+  }
+  .containerTag {
+    width: 24px;
+    height: 24px;
+  }
 }
 </style>
