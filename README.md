@@ -1,5 +1,6 @@
-# Nuxt Twitter Clone
+# Nuxt Twitter Clone 5/09/2022
 
+extrait du tuto : https://www.youtube.com/watch?v=_cM4j9_LfQk&t=2623s
 ` npx nuxi init nuxt_twitter_clone`
 `cd nuxt_twitter_clone`
 `npm i`
