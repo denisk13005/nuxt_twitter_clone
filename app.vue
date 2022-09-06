@@ -21,7 +21,7 @@
           </div>
           <!-- Main content -->
           <main class="col-span-12 md:col-span-8 xl:col-span-6 bg-red-400 ml-0">
-            <h1>test</h1>
+            <router-view></router-view>
           </main>
 
           <!-- RightSidebar -->
