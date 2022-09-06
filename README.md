@@ -27,3 +27,20 @@ On peut créer un fichier useTailwindConfig qui nous servira à exporter des con
 on crée un dossier Sidebar dans components, on crée un dossier Left dans Sidebar et enfin on crée un fichier index.vue, ce fichier sera la vue du composant SidebarLeft, les dossier imbriqués dans les composants donne leurs noms aux composants
 
 On crée le fichier Tab qui comprendra la balise <slot></slot> cette balise agit un peu comme le children en react, on déclare un attribut name dans la balise slot qui le liera dans le parent(grace a v-slot, voir ex dans index.vue)
+
+## SideBarRight
+
+Sensiblement identique à SideBarLeft, utilisation de tailwing import des config pour l'anim et utilisation de <slot></slot>
+
+## Main section
+
+### on va créer la partie post de pour les tweets qui seront ensuite afficher en dessous
+
+## Création du back
+
+On crée un dossier server a la racine
+On crée un dossier api
+On crée un dossier auth
+On crée un fichier register post
+
+Le dossier api rendra tous ses dossiers et fichiers accessible à l'url localhost:3000/api.... selon ce qu'on veut, on remplaçera le 3000 par l'adresse de production lors de la mise en production
