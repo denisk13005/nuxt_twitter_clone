@@ -3,7 +3,7 @@
     <div class="bg-white dark:bg-dim-900 darkmode dark:text-gray-50">
       <div class="min-h-full">
         <div
-          class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-0"
+          class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5 xl:gap-8"
         >
           <!-- Left SideBar -->
           <div
@@ -19,17 +19,18 @@
               <SidebarLeft />
             </div>
           </div>
-
+          <!-- Main content -->
           <main class="col-span-12 md:col-span-8 xl:col-span-6 bg-red-400 ml-0">
             <h1>test</h1>
           </main>
 
           <!-- RightSidebar -->
-          <!-- <aside class="bg-slate-600 md:col-span-2">
-            <h1>SideBarRight</h1>
-          </aside> -->
+          <aside class="hidden md:block xl:col-span-4 md:col-span-3 h-min">
+            <div class="sticky top-0">
+              <SidebarRight />
+            </div>
+          </aside>
         </div>
-        <!-- Main content -->
       </div>
     </div>
   </div>
@@ -53,7 +54,7 @@ const toggleDarkMode = function () {
 </script>
 <style>
 .body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
   border: 1px solid red;
 }

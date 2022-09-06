@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     to="#"
-    class="flex items-center justify-start p-3 hover:bg-red-700 rounded-full px-5 dark:hover:bg-dim-200 min-w-full"
+    class="flex items-center md:justify-start p-3 hover:bg-dim-100 rounded-full md:px-5 dark:hover:bg-dim-200 min-w-full"
     :class="defaultTransition"
   >
     <div class="flex items-center">
